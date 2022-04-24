@@ -1,0 +1,303 @@
+*, input {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    height: 92px;
+    background-color: #B6DAD1;
+}
+
+.avatar-space-img {
+    margin: 11px auto 11px 23px;
+}
+
+.fa-solid {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 28px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: -8px 2px 8px 0 rgba(34, 60, 80, 0.2);
+    margin-right: -100px;
+    opacity: 0;
+    transition: margin-right 2s, opacity 5s;
+    z-index: 2;
+}
+
+.open {
+    display: flex;
+    margin-right: 30px;
+    opacity: 1;
+    transition: margin-right 2s, opacity 5s;
+}
+
+.burger-menu {
+    margin-left: 1300px;
+}
+
+.nav-link {
+    margin-top: 100px;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.items-bar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #D5D5D7;
+    height: 100%;
+    padding-top: 128px;
+    padding-bottom: 21px;
+}
+
+.item {
+    display: flex;
+    margin-left: 45px;
+    margin-bottom: 9px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-link {
+    margin-top: 279px;
+    margin-left: 45px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.menu-block {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 6;
+    padding-top: 25px;
+    padding-left: 39px;
+}
+
+.menu-heading {
+    display: flex;
+    font-size: 48px;
+}
+
+.id-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #D0D0D0;
+    margin-bottom: 20px;
+    padding: 14px 17px 13px 14px;
+    width: 45%;
+}
+
+.id-input {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 86px 4px 6px;
+    font-size: 13px;
+}
+
+.submit-button {
+    display: flex;
+    border: none;
+    margin-left: 35px;
+    background-color: #55E4CB;
+    padding: 4px 31px;
+    font-size: 14px;
+}
+
+.menu-screen {
+    display: flex;
+    background-color: #E2E0E0;
+    flex-direction: column;
+    width: 80%;
+    padding: 30px 31px 100px 14px;
+}
+
+.menu-screen p {
+    font-size: 14px;
+}
+
+.row-1 {
+    display: flex;
+    background-color: #EFEFEF;
+}
+
+.row-1 div {
+    display: flex;
+    width: 16.5%;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-2 div {
+    display: flex;
+    width: 16.5%;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.row-2 img {
+    margin-left: 7px;
+}
+
+.stars {
+    margin-top: 2px;
+}
+
+.eye-img {
+    width: 20px;
+    margin-top: -17px;
+}
+
+.active-item {
+    background-color:  #76FC55;
+    width: 83px !important;
+    height: 26px;
+    margin-top: -4px !important;
+    margin-left: -18px !important;
+}
+
+.active-item p {
+    margin-top: 4px;
+    margin-left: 15px;
+    color: #FFFFFF;
+}
+
+.dropdown {
+    margin-top: 0 !important;
+    margin-left: -10px !important;
+}
+
+.btn {
+    height: 27px;
+    margin-top: -4px;
+    background-color: #000000;
+    padding: 0 8px 0;
+}
+
+.dropdown-menu {
+    background-color: #000000;
+}
+
+.dropdown-item {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.dropdown-item:active {
+    color: #FC0000;
+}
+
+.btn span {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.row-3 {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: #A8A6A6;
+}
+
+@media (max-width: 500px) {
+    body {
+        overflow: scroll;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .items-bar {
+        padding-top: 28px;
+    }
+
+    .item,
+    .about-link {
+        margin-left: 30%;
+    }
+
+    .about-link {
+        margin-top: 20px;
+    }
+
+    .menu-heading {
+        font-size: 24px;
+        margin-left: 20%;
+    }
+
+    .id-menu {
+        flex-direction: column;
+        margin-left: 20%;
+    }
+
+    .id-input {
+        padding-right: 0;
+    }
+
+    .submit-button {
+        margin-top: 20px;
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    .menu-screen {
+        flex-direction: row;
+        margin-left: 5%;
+    }
+
+    .row-1,
+    .row-2 {
+        flex-direction: column;
+    }
+
+    .row-3 {
+        display: none;
+    }
+
+    .active-item {
+        margin-left: 0 !important;
+    }
+
+    .active-item p {
+        margin-left: 0;
+        margin-top: -2px;
+        padding: 5px;
+    }
+
+    .dropdown {
+        margin-left: 0 !important;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tsybuzghin V. Frontend developer MeduzZen Test Task 19.04.2022, page_2</title>
+</head>
+<body>
+<nav class="navigation-bar">
+    <div class="avatar">
+        <img src="img/Frame_3.svg" alt="avatar-space" class="avatar-space-img">
+    </div>
+    <div class="burger-menu">
+        <img src="img/Group_9.svg" alt="burger-img" class="fa-solid">
+        <div class="links">
+            <a href="#" class="nav-link">Link-1</a>
+            <a href="#" class="nav-link">Link-2</a>
+            <a href="#" class="nav-link">Link-3</a>
+            <a href="#" class="nav-link">Link-4</a>
+            <a href="#" class="nav-link">Link-5</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="items-bar">
+        <a href = "../users_list/index.html" class="item">Show Users</a>
+        <a href = "" class="item">Create user</a>
+        <a href = "../update_user/index.html" class="item">Update user</a>
+        <a href = "../get_user_by_id/index.html" class="item">Get user</a>
+        <a href = "../about_us/index.html" class="about-link">about us</a>
+    </div>
+    <div class="menu-block">
+        <p class="menu-heading">Create user</p>
+        <div>
+            <form class="create-form">
+                <div class="contact">
+                    <div>
+                        <input type="text" name="username" maxlength="30" placeholder="Username" class="username-input"/>
+                    </div>
+                    <div>
+                        <input type="text" name="email" maxlength="30" placeholder="Email" class="email-input" required="required"/>
+                    </div>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" maxlength="30" placeholder="Password" class="password-input"/>
+                </div>
+                <div class="form-button">
+                    <input type="submit" value="CREATE" class="submit-button">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

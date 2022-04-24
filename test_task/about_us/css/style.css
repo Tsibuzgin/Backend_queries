@@ -1,0 +1,154 @@
+*, input {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    height: 92px;
+    background-color: #B6DAD1;
+}
+
+.avatar-space-img {
+    margin: 11px auto 11px 23px;
+}
+
+.fa-solid {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 28px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 2px 8px 0 rgba(34, 60, 80, 0.2);
+    margin-right: -100px;
+    opacity: 0;
+    transition: margin-right 2s, opacity 5s;
+}
+
+.open {
+    display: flex;
+    margin-right: 30px;
+    opacity: 1;
+    transition: margin-right 2s, opacity 5s;
+}
+
+.burger-menu {
+    margin-left: 1300px;
+}
+
+.nav-link {
+    margin-top: 100px;
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.items-bar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #D5D5D7;
+    height: 100%;
+    padding-top: 128px;
+    padding-bottom: 21px;
+}
+
+.item {
+    display: flex;
+    margin-left: 45px;
+    margin-bottom: 9px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-link {
+    margin-top: 280px;
+    margin-left: 45px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.items-bar a:hover {
+    color: #0a58ca;
+}
+
+.menu-block {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 6;
+    padding-top: 25px;
+    padding-left: 39px;
+    max-width: 75%;
+}
+
+.menu-heading {
+    display: flex;
+    font-size: 48px;
+}
+
+.accordion-button {
+    background-color: #C0BEBE;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #C0BEBE;
+}
+
+.accordion-body {
+    background-color: #C0BEBE;
+}
+
+@media (max-width: 500px) {
+    body {
+        overflow: scroll;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .items-bar {
+        padding-top: 28px;
+    }
+
+    .item,
+    .about-link {
+        margin-left: 30%;
+    }
+
+    .about-link {
+        margin-top: 20px;
+    }
+
+    .menu-heading {
+        font-size: 24px;
+        margin-left: 30%;
+    }
+
+    .accordion {
+        margin-left: 22%;
+    }
+}
