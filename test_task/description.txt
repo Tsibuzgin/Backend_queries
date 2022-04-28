@@ -1,2 +1,2 @@
-1. Бургер меню лучше не делать на весь экран: это затрудняет работу со страницей;
-2. Если инпут пароля сделать в 2 раза длиннее инпута имейла, это может сбить пользователя с толку; кнопку лучше сделать короче;
+1. It is better not to make the Burger menu full screen: this makes it difficult to work with the page;
+2. If the password input is made 2 times longer than the email input, this can confuse the user; it is better to make the button shorter.
