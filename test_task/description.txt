@@ -1,2 +1,0 @@
-1. It is better not to make the Burger menu full screen: this makes it difficult to work with the page;
-2. If the password input is made 2 times longer than the email input, this can confuse the user; it is better to make the button shorter.
